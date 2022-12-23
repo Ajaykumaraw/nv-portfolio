@@ -1,0 +1,52 @@
+.header{
+    width: 100%;
+    height: 6.4rem;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 1.7rem;
+    margin: auto ;
+    color: var(--green-light);
+    margin-left: 4rem;
+}
+.nav-links{
+    display: flex;
+    font-size: .7rem;
+    font-weight: 300;
+    font-family: 'Martian Mono', sans-serif;
+    margin: auto 3.8rem;
+}
+.nav-links ul{
+    margin-top: .7rem;
+    display: flex;
+    list-style: none;
+}
+.nav-links ul li{
+    margin-right: 2rem;
+}
+.nav-links ul li a{
+    color: var(--text-color-light);
+    text-decoration: none;
+}
+.nav-links ul li a:hover{
+    color: var(--green-light);
+}
+.nav-links ul li a span{
+    margin-right: .2rem;
+    color: var(--green-light);
+}
+.resume-btn button{
+    width: 5.2rem;
+    height: 2.5rem;
+    border-radius: .2rem;
+    cursor: pointer;
+    background: var(--primary-color);
+    color: var( --green-light);
+    border: 1px solid var( --green-light);
+}
+.resume-btn button:hover{
+   
+}

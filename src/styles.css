@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Martian+Mono:wght@100;300;500;600&family=Roboto:wght@100;300;400;500&family=Rubik:wght@700&display=swap');
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: rgba(10,25,47,0.85);
+    --text-color: #a8b2d1;
+    --text-grey : #8892b0;
+    --text-color-light: #ccd6f6;
+    --green-light:#64ffda;
+}

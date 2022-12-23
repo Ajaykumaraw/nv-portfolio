@@ -1,0 +1,65 @@
+.aboutMe-sec{
+    width: 100%;
+    height: 90vh;
+}
+.about-content{
+    width: 90%;
+    height: 90vh;
+    margin: 0rem auto;
+    display: flex;
+}
+.content-box{
+    width: 60%;
+    font-family: 'Roboto', sans-serif;
+}
+.ab-hd{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+.nm{
+    color: var(--green-light);
+    margin-right: .5rem;
+}
+.about-t{
+    color: var(--text-color-light);
+    font-size: 1.2rem;
+}
+.line{
+    margin-left: 1rem;
+    width: 15rem;
+    font-size: 1px;
+}
+.ab-pr{
+    width: 90%;
+    height: 50%;
+    margin-top: 2rem;
+    margin: 1rem 1rem;
+    text-align: justify;
+    line-height: 1.5rem;
+    color: var(--text-grey);
+}
+.ab-pr p{
+    margin-bottom: 1rem;
+}
+.img-box{
+    width: 40%;
+    position: relative;
+}
+.img-cont{
+    width: 14rem;
+    height: 15rem;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    border-radius: .2rem;
+    border: 2px solid var(--green-light);
+}
+.in-img{
+    position: absolute;
+    width: 14rem;
+    height: 15rem;
+    margin-top: 4rem;
+    margin-left: 4rem;
+    border-radius: .2rem;
+    background: var(--text-grey);
+}

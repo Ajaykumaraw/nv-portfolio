@@ -1,0 +1,91 @@
+.main{
+    width: 100%;
+    height: 100vh;
+    margin: 0rem;
+    padding: 0rem;
+    overflow-y: scroll;
+    background: #0a192f;
+    position: relative;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(6, 15, 29, 0.85); 
+    border-radius: 10px;
+  }
+.header{
+    width: 100%;
+    height: 6.4rem;
+    background: var(--primary-color);
+    box-shadow: black;
+    position: fixed;
+}
+.router{
+    width: 80%;
+    height: 200vh;
+    margin: 0rem auto;
+    background: var(--primary-color);
+}
+.social-icon{
+  position: absolute;
+  position: fixed;
+  display: block;
+  margin: 0rem 3rem;
+  bottom: 1.5rem;
+  width: 10px;
+  height: 20rem;
+
+}
+.icon-s{
+  font-size: 1.4rem;
+  margin: 1rem .3rem;
+  color: #a8b2d1;
+  padding: 0rem;
+  transition: all 3ms ease;
+}
+.icon-s:hover{
+  color: #64ffda;
+  font-size: 1.5rem;
+  padding-top: -.2rem;
+}
+.line{
+  margin-top: 1.5rem;
+  height: .1rem;
+  width: 2rem;
+  color: #a8b2d1;
+}
+hr{
+  color: #a8b2d1;
+}
+.social-line{
+  rotate: 90deg;
+  width: 8rem;
+  height: 1px;
+  border: 1px solid #a8b2d1;;
+  color: #a8b2d1;
+  margin-left: -3rem;
+  margin-top: 5.7rem;
+}
+.email{
+  position: absolute;
+  position: fixed;
+  width: 25rem;
+  height: 2rem;
+  right: -8rem;
+  padding: .5rem;
+  bottom: 7rem;
+  display: flex;
+  rotate: 90deg;
+  color: #a8b2d1;
+  font-size: .8rem;
+  font-family: 'Martian Mono', sans-serif;
+  font-weight: 300;
+}
+hr{
+  width: 7rem;
+  margin-top: .5rem;
+  margin-left: 2rem;
+  color: #a8b2d1;
+  border: 1px solid #a8b2d1;;
+}
