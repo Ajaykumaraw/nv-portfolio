@@ -1,6 +1,6 @@
 .project-sec{
     width: 100%;
-    height: 90vh;
+    height: 160vh;
 }
 .prj-cont{
     width: 100%;
@@ -37,15 +37,113 @@
     display: flex;
 }
 .prj-img{
-    width: 55% ;
-    background: #eee;
+    width: 55%;
+    background: rgba(17, 47, 66,.80);
+    display: block;
+    align-items: center;
 }
-.prj-img img{
+.sd-b{
     width: 100%;
+    height: 100%;
+    z-index: 200;
+    background: rgba(34, 64, 83, 0.692);
+}
+.prjImg-title{
+    width: 100%;
+    height: 5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 1.5rem;
+    font-weight: 300;
+    color: var(--text-grey);
+    font-family: 'Bree Serif', serif;
+}
+.prjImg-des{
+    width: 100%;
+    height: 1.5rem;
+    font-size: .8rem;
+    text-align: center;
+    padding-top: .2rem;
+    font-weight: 100;
+    color: var(--text-grey);
+    font-family: 'Bree Serif', serif;
+}
+.prjImg-img{
+    margin-left: 1rem;
+    width: 100%;
+    height: 5rem;
+    margin-top: 2rem;
+}
+.proj1{
+    margin-left: 4rem;
+}
+.proj1 img{
+    width: 80%;
+    animation:  fadeIn 5s; ;
 }
 .prj-dt{
     width: 45%;
-    background: rgb(194, 188, 188);
     text-align: right;
+    padding: 1rem;
+}
+.prj-title{
+    width: 100%;
+    height: 1.5rem;
+    font-size: .8rem;
+    font-weight: 300;
+    margin-top: 4rem;
+    font-family: 'Martian Mono', sans-serif;
+    color: var(--green-light);
+}
+.prj-name{
+    width: 100%;
+    height: 3rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: 'Bree Serif', serif;
+    color: var(--text-color-light);
+}
+.prj-descrip{
+    width: 100%;
+    height: 5rem;
+    padding: 1rem;
+    font-size: .9rem;
+    text-align: left;
+    color: var(--text-grey);
+    border-radius: .2rem;
+    background: rgb(17, 47, 66);
+}
+.prj-tech{
+    width: 100%;
+    height: 1rem;
+    padding: .5rem;
+    font-size: .7rem;
+    font-weight: 100;
+    color: var(--text-color-light);
+    font-family: 'Martian Mono', sans-serif;
+}
+.prj-links{
+    width: 100%;
+    height: 1.5rem;
+    margin-top: 1rem;
+}
+.icon i{
+    font-size: 1.2rem;
+    margin-right: .8rem;
+    color: var(--text-color-light);
+}
+
+/* second project */
+.secnd-prj{
+    width: 100%;
+    height: 60vh;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    display: flex;
+}
+.sec-prj-dt{
+    width: 45%;
+    background: var(--primary-color);
+    text-align: left;
     padding: 1rem;
 }
