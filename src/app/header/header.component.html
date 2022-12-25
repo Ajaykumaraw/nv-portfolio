@@ -2,17 +2,18 @@
     <div class="logo">
         <h3>Aj</h3>
     </div>
-    <div class="menu-bar">
-        <div class="icon">
-            <i class="fa-regular fa-bars"></i>
-        </div>
+    <div class="menu-bar" (click)="tgmn()">
+        <i class="fa-solid fa-bars"></i>
     </div>
-    <div class="nav-links">
+    <div class="nav-links" *ngIf="toggle_menu">
+        <div class="clmn" (click)="tgmn()">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
         <ul>
-            <li><a href=""><span>01.</span>About</a></li>
-            <li><a href=""><span>02.</span>Experience</a></li>
-            <li><a href=""><span>03.</span>Work</a></li>
-            <li><a href=""><span>04.</span>Contact</a></li>
+            <li><a href=""><div class="spanw"><span>01.</span></div> <div>About</div></a></li>
+            <li><a href=""><div class="spanw"><span>02.</span></div> <div>Experience</div></a></li>
+            <li class="work"><a href=""><div class="spanw"><span>03.</span></div> <div>Work</div></a></li>
+            <li><a href=""> <div class="spanw"><span>03.</span></div> <div>Contact</div></a></li>
         </ul>
         <div class="resume-btn">
             <button>Resume</button>  

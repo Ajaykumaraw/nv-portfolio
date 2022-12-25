@@ -12,12 +12,18 @@
     color: var(--green-light);
     margin-left: 4rem;
 }
+.menu-bar{
+    display: none;
+}
 .nav-links{
     display: flex;
     font-size: .7rem;
     font-weight: 300;
     font-family: 'Martian Mono', sans-serif;
     margin: auto 3.8rem;
+}
+.clmn{
+    display: none;
 }
 .nav-links ul{
     margin-top: .7rem;
@@ -26,10 +32,16 @@
 }
 .nav-links ul li{
     margin-right: 2rem;
+    display: flex;
 }
 .nav-links ul li a{
     color: var(--text-color-light);
     text-decoration: none;
+    display: flex;
+}
+.spanw{
+    margin: 0rem;
+    padding: 0rem;
 }
 .nav-links ul li a:hover{
     color: var(--green-light);
@@ -54,22 +66,79 @@
     .header{
         width: 100%;
         height: 5rem;
+        position: relative;
     }
     .logo{
         margin-left: 2rem;
     }
-    .nav-links{
-        display: none;
-    }
     .menu-bar{
+        display: block;
+    }
+    .nav-links{
+      width: 70%;
+      height: 100vh;
+      margin-top: 40rem;
+      right: 0;
+      margin-right: 0rem;
+      position: absolute;
+      background: rgb(19, 45, 63);
+      /* display: block; */
+      padding-top: 2rem;
+      align-items: center;
+      justify-content: center;
+    }
+    .clmn{
         width: 1rem;
         height: 1rem;
-        font-size: 5rem;
+        display: block;
+        position: absolute;
+        font-size: 1rem;
+        color: var(--green-light);
+        right: 0;
+        margin-top: 1rem;
+        margin-right: 10%;
+    }
+    .clmn .fa-xmark{
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+    .nav-links ul{
+        width: 100%;
+        display: block;
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-links ul li{
+        width: 100%;
+        display: block;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        background: rgba(19, 45, 63, 0.932);
+    }   
+    .nav-links ul li a{
+        text-align: center;
+        display: block;
+    }
+    .spanw{
+        padding: 1rem;
+    }
+    .menu-bar{
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.7rem;
         color: var(--green-light);
         margin-right: 2.5rem;
+        cursor: pointer;
     }
     .icon{
         font-size: 3rem;
+        cursor: pointer;
+    }
+    .resume-btn button{
+        margin-left: 30%;
     }
     
 }

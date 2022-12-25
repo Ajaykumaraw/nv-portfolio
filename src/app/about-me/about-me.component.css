@@ -44,7 +44,6 @@
 }
 .img-box{
     width: 40%;
-    position: relative;
 }
 .img-cont{
     width: 14rem;
@@ -55,11 +54,89 @@
     border: 2px solid var(--green-light);
 }
 .in-img{
-    position: absolute;
     width: 14rem;
     height: 15rem;
     margin-top: 4rem;
     margin-left: 4rem;
     border-radius: .2rem;
     background: var(--text-grey);
+}
+@media (min-width: 220px) and (max-width: 500px) {
+    .aboutMe-sec{
+        width: 100%;
+        height: 130vh;
+    }
+    .about-content{
+        width: 90%;
+        height: 70%;
+        margin: 0rem auto;
+        display: block;
+    }
+    .content-box{
+        width: 100%;
+        height: 100vh;
+        font-family: 'Roboto', sans-serif;
+    }
+    .ab-hd{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .nm{
+        color: var(--green-light);
+        margin-right: .5rem;
+    }
+    .about-t{
+        width: 100%;
+        color: var(--text-color-light);
+        font-size: 1.3rem;
+    }
+    .line{
+        margin-left: 0rem;
+        width: 10rem;
+        font-size: 1px;
+    }
+    .ab-pr{
+        width: 90%;
+        height: 80%;
+        margin-top: 2rem;
+        margin: 1rem 1rem;
+        text-align: justify;
+        line-height: 1.5rem;
+        color: var(--text-grey);
+    }
+    .ab-pr p{
+        font-size: .7;
+        margin-bottom: 1rem;
+    }
+    .img-box{
+        width: 100%;
+        height: 30%;
+        margin-top: -5rem;
+
+    }
+    .inner-div{
+        width: 60%;
+        margin: .3rem auto;
+    }
+    .img-cont{
+        width: 9rem;
+        height: 9rem;
+        max-width: 11rem;
+        max-height: 11rem;
+        margin-top: 0rem;
+        margin-left: 0rem;
+        border-radius: .2rem;
+        border: 2px solid var(--green-light);
+    }
+    .in-img{
+        width: 9rem;
+        height: 9rem;
+        max-width: 11rem;
+        max-height: 11rem;
+        margin-top: .3rem;
+        margin-left: .3rem;
+        border-radius: .2rem;
+        background: var(--text-grey);
+    }
 }

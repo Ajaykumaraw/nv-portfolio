@@ -57,3 +57,93 @@
     text-align: center;
     color: var(--text-color-light);
 }
+
+@media (min-width: 220px) and (max-width: 500px) {
+    .getIntouch-sec{
+        width: 100%;
+        height: 80vh;
+    }
+    .content{
+        width: 80%;
+        height: 60vh;
+        margin: 0rem auto;
+        display: block;
+        align-items: center;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+    .title{
+        width: 100%;
+        height: 4rem;
+        padding: 1rem;
+        color: var(--green-light);
+        font-weight: 300;
+        font-family: 'Martian Mono', sans-serif;
+    }
+    .message{
+        width: 100%;
+        height: 5rem;
+        font-size: 2.6rem;
+        font-weight: 700;
+        color: var(--text-color-light);
+    }
+    .sub-msg{
+        width: 90%;
+        margin: 0rem auto;
+        height: 10rem;
+        color: var( --text-grey);
+    }
+    .t-button{
+        width: 100%;
+        height: 3rem;
+    }
+    .t-button button{
+        width: 10rem;
+        height: 2.8rem;
+        padding: 0rem 1rem;
+        color: var(--green-light);
+        background: var(--primary-color);
+        border-radius: .2rem;
+        font-family: 'Roboto', sans-serif;
+        border: 1px solid var(--green-light);
+    }
+    .footer{
+        width: 100%;
+        height: 1rem;
+        margin-top: 6.5rem;
+        font-size: .8rem;
+        font-family: 'Martian Mono', sans-serif;
+        font-weight: 300;
+        text-align: center;
+        color: var(--text-color-light);
+    }
+    .social-icon{
+        width: 100%;
+        color: var(--green-light);
+
+    }
+    .f-icons{
+        width: 75%;
+        text-align: center;
+        display: flex;
+
+        margin: .3rem auto;
+    }
+    .icon-s{
+        font-size: 1.5rem;
+        margin-left: 10%;
+    }
+    .social-icon .line{
+        display: none;
+    }
+    .footer{
+        width: 100%;
+        height: 1rem;
+        margin-top: 3.5rem;
+        font-size: .8rem;
+        font-family: 'Martian Mono', sans-serif;
+        font-weight: 300;
+        text-align: center;
+        color: var(--text-color-light);
+    }
+}

@@ -89,3 +89,22 @@ hr{
   color: #a8b2d1;
   border: 1px solid #a8b2d1;;
 }
+
+@media (min-width: 220px) and (max-width: 500px) {
+  .main{
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .router{
+    width: 85%;
+    height: 200vh;
+    margin: 0rem auto;
+    background: var(--primary-color);
+  }
+  .social-icon{
+    display: none;
+  }
+  .email{
+    display: none;
+  }
+}

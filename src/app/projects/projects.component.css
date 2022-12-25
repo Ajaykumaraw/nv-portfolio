@@ -7,7 +7,6 @@
     height: 90vh;
     font-family: 'Roboto', sans-serif;
 }
-
 .ab-hd{
     width: 70%;
     display: flex;
@@ -147,3 +146,152 @@
     text-align: left;
     padding: 1rem;
 }
+
+@media (min-width: 220px) and (max-width: 500px) {
+    .project-sec{
+        width: 100%;
+    }
+    .prj-cont{
+        width: 100%;
+    }
+
+    .ab-hd{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .nm{
+        color: var(--green-light);
+        margin-right: .5rem;
+    }
+    .about-t{
+        color: var(--text-color-light);
+        font-size: 1.4rem;
+    }
+    .line{
+        display: none;
+        margin-left: 1rem;
+        width: 15rem;
+        font-size: 1px;
+    }
+    .pr-sec{
+        width: 100%;
+    }
+    .fst-prj{
+        width: 100%;
+        height: 67vh;
+        display: block;
+        padding: .5rem;
+        margin-top: 1rem;
+        background: rgb(9, 22, 27);
+    }
+    .prj-img{
+        width: 100%;
+        height: 30vh;
+        background:  rgba(9, 22, 27, 0.842);
+    }
+    .sd-b{
+        width: 100%;
+    }
+    .prjImg-title{
+        width: 100%;
+        height: 3rem;
+        font-size: 1rem;
+        text-align: center;
+        padding-top: .5rem;
+        font-weight: 300;
+        color: var(--text-grey);
+        font-family: 'Bree Serif', serif;
+    }
+    .prjImg-des{
+        width: 100%;
+        height: 1rem;
+        font-size: .7rem;
+        text-align: center;
+        padding-top: .1rem;
+        font-weight: 100;
+        color: var(--text-grey);
+        font-family: 'Bree Serif', serif;
+    }
+    .prjImg-img{
+        margin-left: 0rem;
+        width: 100%;
+        height: 5rem;
+        margin-top: 2rem;
+    }
+    .proj1{
+        margin-left: 4rem;
+    }
+    .proj1 img{
+        width: 80%;
+        animation:  fadeIn 5s; ;
+    }
+    .prj-dt{
+        width: 100%;
+        text-align: right;
+        padding: .3rem;
+    }
+    .prj-title{
+        width: 100%;
+        height: 1rem;
+        font-size: .7rem;
+        font-weight: 300;
+        margin-top: 1rem;
+        font-family: 'Martian Mono', sans-serif;
+        color: var(--green-light);
+    }
+    .prj-name{
+        width: 100%;
+        height: 3rem;
+        font-size: 1.5rem;
+        font-weight: 300;
+        font-family: 'Bree Serif', serif;
+        color: var(--text-color-light);
+    }
+    .prj-descrip{
+        width: 100%;
+        height: 5rem;
+        padding: 1rem;
+        font-size: .9rem;
+        text-align: left;
+        color: var(--text-grey);
+        border-radius: .2rem;
+        background: rgb(17, 47, 66);
+    }
+    .prj-tech{
+        width: 100%;
+        height: 1.7rem;
+        padding: .5rem;
+        font-size: .7rem;
+        font-weight: 100;
+        color: var(--text-color-light);
+        font-family: 'Martian Mono', sans-serif;
+    }
+    .prj-links{
+        width: 100%;
+        height: 1.5rem;
+        margin-top: 1rem;
+    }
+    .icon i{
+        font-size: 1.2rem;
+        margin-right: .8rem;
+        color: var(--text-color-light);
+    }
+
+    /* second project */
+    .secnd-prj{
+        width: 100%;
+        height: 67vh;
+        margin-top: 3rem;
+        padding: .5rem;
+        display: block;
+        background: rgb(9, 22, 27);
+    }
+    .sec-prj-dt{
+        width: 100%;
+        background: var(--primary-color);
+        text-align: left;
+        padding: 1rem;
+    }
+}
+
