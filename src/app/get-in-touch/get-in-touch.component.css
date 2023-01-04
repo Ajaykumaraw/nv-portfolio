@@ -58,14 +58,15 @@
     color: var(--text-color-light);
 }
 
-@media (min-width: 220px) and (max-width: 500px) {
-    .getIntouch-sec{
+@media only screen and (max-width: 800px){
+      .getIntouch-sec{
         width: 100%;
-        height: 80vh;
+        height: max-content;
+        margin-top: 2rem;
     }
     .content{
-        width: 80%;
-        height: 60vh;
+        width: 90%;
+        height: max-content;
         margin: 0rem auto;
         display: block;
         align-items: center;
@@ -74,7 +75,7 @@
     }
     .title{
         width: 100%;
-        height: 4rem;
+        height: 25%;
         padding: 1rem;
         color: var(--green-light);
         font-weight: 300;
@@ -82,20 +83,23 @@
     }
     .message{
         width: 100%;
-        height: 5rem;
+        height: 25%;
         font-size: 2.6rem;
         font-weight: 700;
+        margin-bottom: 1.5rem;
         color: var(--text-color-light);
     }
     .sub-msg{
         width: 90%;
-        margin: 0rem auto;
-        height: 10rem;
+        margin: 1rem auto;
+        height: 25%;
         color: var( --text-grey);
     }
     .t-button{
         width: 100%;
-        height: 3rem;
+        height: 25%;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
     }
     .t-button button{
         width: 10rem;
@@ -120,7 +124,7 @@
     .social-icon{
         width: 100%;
         color: var(--green-light);
-
+        margin-top: .2rem;
     }
     .f-icons{
         width: 75%;

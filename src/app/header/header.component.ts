@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   toggle_menu: boolean = true;
+  @ViewChild('nav-links') navlinks!: ElementRef;
 
   constructor() { }
 
@@ -16,7 +17,10 @@ export class HeaderComponent implements OnInit {
 
 
   tgmn(){
-    return this.toggle_menu = !this.toggle_menu;
+    if( this.toggle_menu){
+      this.toggle_menu = false;
+    }else  this.toggle_menu = true;
+  
   }
 
 }
