@@ -22,6 +22,14 @@
     font-family: 'Martian Mono', sans-serif;
     margin: auto 3.8rem;
 }
+.nav-links-new{
+    width: .1rem;
+    display: flex;
+    font-size: 3rem;
+    font-weight: 300;
+    font-family: 'Martian Mono', sans-serif;
+    margin: auto 3.8rem;
+}
 .clmn{
     display: none;
 }
@@ -78,20 +86,7 @@
     .nav-links{
         display: none;
     }
-    .nav-links-mb-hidden{
-        width: 70%;
-        height: 100vh;
-        top: 0;
-        right: 0;
-        margin-right: 0rem;
-        position: absolute;
-        background: rgb(19, 45, 63);
-        display: block;
-        padding-top: 2rem;
-        align-items: center;
-        justify-content: center;
-    }
-    .nav-links{
+    /* .nav-links{
       display: block;
       width: 70%;
       height: 100vh;
@@ -101,10 +96,10 @@
       position: absolute;
       background: rgb(19, 45, 63);
       /* display: block; */
-      padding-top: 2rem;
+      /* padding-top: 2rem;
       align-items: center;
       justify-content: center;
-    }
+    } */ 
     .clmn{
         width: 1rem;
         height: 1rem;
@@ -162,6 +157,129 @@
     
 }
 
-@media only screen and (max-width: 800px){
-   
+@media only screen and (max-width: 700px){
+    .header{ 
+        width: 100%;
+        height: 5rem;
+        position: relative;
+    }
+    .menu-bar{
+        display: block;
+    }
+    .menu-bar{
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.7rem;
+        color: var(--green-light);
+        margin-right: 2.5rem;
+        cursor: pointer;
+    }
+    /* opn menu */
+    
+    .nav-links-new{
+       width: 50%;
+       height: 100vh;
+       font-size: .5rem;
+       display: block;
+       position: absolute;
+       margin: .1rem;
+       right: 0;
+       top: 0;
+       color: #fff;
+       background: rgb(19, 45, 63);
+    }
+    .nav-links-new .clmn{
+        width: 1rem;
+        height: 1rem;
+        display: block;
+        position: absolute;
+        color: var(--green-light);
+        right: 0;
+        top: 2rem;
+        right: 2rem;
+        margin-right: 10%;
+    }
+    .clmn .fa-xmark{
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+    .nav-links-new ul{
+        width: 100%;
+        display: block;
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-links-new ul li{
+        width: 100%;
+        display: block;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        color: var(--green-light);
+        background: rgba(19, 45, 63, 0.932);
+    }   
+    .nav-links-new ul li a{
+        text-align: center;
+        display: block;
+        color: var(--green-light);
+    }
+    .spanw{
+        font-size: .5rem;
+        padding: 1rem;
+    }
+    /* opn menu end */
+    /* close menu */
+    .nav-links-new-cl{
+        width: 1%;
+        height: 100vh;
+        font-size: .5rem;
+        display: block;
+        position: absolute;
+        margin: .1rem;
+        right: 0;
+        top: 0;
+        color: #fff;
+        background: rgb(19, 45, 63);
+      }
+      .nav-links-new-cl .clmn{
+         width: 1rem;
+         height: 1rem;
+         display: block;
+         position: absolute;
+         color: var(--green-light);
+         right: 0;
+         top: 2rem;
+         right: 2rem;
+         margin-right: 10%;
+     }
+     .clmn .fa-xmark{
+         margin-bottom: 1rem;
+         font-size: 2rem;
+     }
+     .clmn-cl{
+        display: none;
+     }
+     .nav-links-new-cl ul{
+         width: 100%;
+         display: block;
+         margin-top: 3rem;
+         margin-bottom: 4rem;
+         align-items: center;
+         justify-content: center;
+     }
+     .nav-links-new-cl ul li{
+         width: 100%;
+         display: block;
+         margin-top: 1rem;
+         margin-bottom: 2rem;
+         text-align: center;
+         background: rgba(19, 45, 63, 0.932);
+     }   
+     .nav-links-new-cl ul li a{
+         text-align: center;
+         display: block;
+     }
+     /* cls menu */
 }

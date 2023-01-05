@@ -8,19 +8,27 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   toggle_menu: boolean = true;
-  @ViewChild('nav-links') navlinks!: ElementRef;
+  @ViewChild('links') navlinks!:ElementRef;
+  @ViewChild('clicon') mnClose!:ElementRef;
 
   constructor() { }
 
   ngOnInit(): void {
+    // this.navlinks.classList.value = "nav-links-new";
   }
 
 
   tgmn(){
-    if( this.toggle_menu){
-      this.toggle_menu = false;
-    }else  this.toggle_menu = true;
+    this.navlinks.nativeElement.classList = 'nav-links-new'; 
+    this.mnClose.nativeElement.classList = 'clmn';
+    // if( this.toggle_menu){
+    //   this.toggle_menu = false;
+    // }else  this.toggle_menu = true;
   
+  }
+  clmn(){
+    this.navlinks.nativeElement.classList = 'nav-links-new-cl'; 
+    this.mnClose.nativeElement.classList = 'clmn-cl';
   }
 
 }

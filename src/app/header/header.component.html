@@ -5,8 +5,8 @@
     <div class="menu-bar" (click)="tgmn()">
         <i class="fa-solid fa-bars"></i>
     </div>
-    <div class="nav-links" id="nav_links" *ngIf="toggle_menu">
-        <div class="clmn" (click)="tgmn()">
+    <div class="nav-links" id="nav_links" #links>
+        <div class="clmn" (click)="clmn()" #clicon>
             <i class="fa-solid fa-xmark"></i>
         </div>
         <ul>
@@ -16,7 +16,7 @@
             <li><a href=""> <div class="spanw"><span>03.</span></div> <div>Contact</div></a></li>
         </ul>
         <div class="resume-btn">
-            <button>Resume</button>  
+            <button (click)="tgmn()">Resume</button>  
         </div>
     </div>
 </header>
