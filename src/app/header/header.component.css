@@ -21,14 +21,16 @@
     font-weight: 300;
     font-family: 'Martian Mono', sans-serif;
     margin: auto 3.8rem;
+    transition: width 1s;
 }
 .nav-links-new{
-    width: .1rem;
+    width: 0rem;
     display: flex;
     font-size: 3rem;
     font-weight: 300;
     font-family: 'Martian Mono', sans-serif;
     margin: auto 3.8rem;
+    transition: width 1s;
 }
 .clmn{
     display: none;
@@ -57,6 +59,9 @@
 .nav-links ul li a span{
     margin-right: .2rem;
     color: var(--green-light);
+}
+.resume-btn{
+    text-align: center;
 }
 .resume-btn button{
     width: 5.2rem;
@@ -152,7 +157,7 @@
         cursor: pointer;
     }
     .resume-btn button{
-        margin-left: 30%;
+       
     }
     
 }
@@ -162,6 +167,7 @@
         width: 100%;
         height: 5rem;
         position: relative;
+        font-family: 'Martian Mono', sans-serif;
     }
     .menu-bar{
         display: block;
@@ -174,6 +180,64 @@
         margin-right: 2.5rem;
         cursor: pointer;
     }
+    .nav-links{
+        width: 50%;
+        height: 100vh;
+        font-size: .5rem;
+        display: block;
+        align-items: center;
+        position: absolute;
+        margin: .1rem;
+        right: 0;
+        top: 0;
+        color: #fff;
+        background: rgb(19, 45, 63);
+        transition: width .5s;
+    }
+    .nav-links .clmn{
+        width: 1rem;
+        height: 1rem;
+        display: block;
+        position: absolute;
+        color: var(--green-light);
+        right: 0;
+        top: 2rem;
+        right: 2rem;
+        margin-right: 10%;
+    }
+    .clmn .fa-xmark{
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+    .nav-links ul{
+        width: 100%;
+        display: block;
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-links ul li{
+        width: 100%;
+        display: block;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        color: var(--green-light);
+        /* background: rgba(19, 45, 63, 0.932); */
+    }   
+    .nav-links ul li a{
+        text-align: center;
+        display: block;
+        color: #fff;
+        font-size: .8rem;
+        text-decoration: none;
+    }
+    .spanw{
+        padding: 1rem;
+        text-decoration: none;
+        color: var(--green-light);
+    }
     /* opn menu */
     
     .nav-links-new{
@@ -181,12 +245,14 @@
        height: 100vh;
        font-size: .5rem;
        display: block;
+       align-items: center;
        position: absolute;
        margin: .1rem;
        right: 0;
        top: 0;
        color: #fff;
        background: rgb(19, 45, 63);
+       transition: width .5s;
     }
     .nav-links-new .clmn{
         width: 1rem;
@@ -218,21 +284,24 @@
         margin-bottom: 2rem;
         text-align: center;
         color: var(--green-light);
-        background: rgba(19, 45, 63, 0.932);
+        /* background: rgba(19, 45, 63, 0.932); */
     }   
     .nav-links-new ul li a{
         text-align: center;
         display: block;
-        color: var(--green-light);
+        color: #fff;
+        font-size: .8rem;
+        text-decoration: none;
     }
     .spanw{
-        font-size: .5rem;
         padding: 1rem;
+        text-decoration: none;
+        color: var(--green-light);
     }
     /* opn menu end */
     /* close menu */
     .nav-links-new-cl{
-        width: 1%;
+        width: 0rem;
         height: 100vh;
         font-size: .5rem;
         display: block;
@@ -241,6 +310,7 @@
         right: 0;
         top: 0;
         color: #fff;
+        transition: width .5s;
         background: rgb(19, 45, 63);
       }
       .nav-links-new-cl .clmn{
@@ -262,24 +332,36 @@
         display: none;
      }
      .nav-links-new-cl ul{
-         width: 100%;
-         display: block;
-         margin-top: 3rem;
-         margin-bottom: 4rem;
-         align-items: center;
-         justify-content: center;
+        width: 100%;
+        display: block;
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+        align-items: center;
+        justify-content: center;
      }
      .nav-links-new-cl ul li{
-         width: 100%;
-         display: block;
-         margin-top: 1rem;
-         margin-bottom: 2rem;
-         text-align: center;
-         background: rgba(19, 45, 63, 0.932);
+        width: 100%;
+        display: block;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        color: var(--green-light);
      }   
      .nav-links-new-cl ul li a{
-         text-align: center;
-         display: block;
-     }
+        text-align: center;
+        display: block;
+        color: #fff;
+        font-size: .8rem;
+        text-decoration: none;
+    }
+    .spanw{
+        padding: 1rem;
+        text-decoration: none;
+        color: var(--green-light);
+    }
      /* cls menu */
+}
+
+@media only screen and (max-width: 1920px){
+   
 }
