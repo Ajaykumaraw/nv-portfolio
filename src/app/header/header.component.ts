@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -11,7 +12,7 @@ export class HeaderComponent implements OnInit {
   @ViewChild('links') navlinks!:ElementRef;
   @ViewChild('clicon') mnClose!:ElementRef;
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
     // this.navlinks.classList.value = "nav-links-new";
@@ -31,4 +32,7 @@ export class HeaderComponent implements OnInit {
     this.mnClose.nativeElement.classList = 'clmn-cl';
   }
 
+  scroll(element:any) {
+    window.scrollTo(element.yPosition);
+}
 }

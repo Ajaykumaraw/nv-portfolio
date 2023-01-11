@@ -181,7 +181,8 @@
         cursor: pointer;
     }
     .nav-links{
-        width: 50%;
+        display: none;
+        /* width: 50%;
         height: 100vh;
         font-size: .5rem;
         display: block;
@@ -192,7 +193,7 @@
         top: 0;
         color: #fff;
         background: rgb(19, 45, 63);
-        transition: width .5s;
+        transition: width .5s; */
     }
     .nav-links .clmn{
         width: 1rem;

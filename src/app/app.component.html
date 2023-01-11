@@ -1,6 +1,6 @@
 <div class="main">
     <div class="social-icon">
-        <div class="github icon-s"> <i class="fa-brands fa-github"></i></div>
+        <div class="github icon-s"><a href="https://github.com/Ajaykumaraw"><i class="fa-brands fa-github"></i></a></div>
         <div class="instgram icon-s"><i class="fa-brands fa-instagram"></i></div>
         <div class="twiter icon-s"><i class="fa-brands fa-twitter"></i></div>
         <div class="linkdin icon-s"><i class="fa-brands fa-linkedin"></i></div>
@@ -15,9 +15,10 @@
       <app-header></app-header>
   </div>
   <div class="router">
-    <app-intro-section></app-intro-section>
-    <app-about-me></app-about-me>
-    <app-work-experience></app-work-experience>
+    <!-- <router-outlet></router-outlet> -->
+    <app-intro-section #intro></app-intro-section>
+    <app-about-me #about></app-about-me>
+    <app-work-experience #exp></app-work-experience>
     <app-projects></app-projects>
     <app-get-in-touch></app-get-in-touch>
   </div>
