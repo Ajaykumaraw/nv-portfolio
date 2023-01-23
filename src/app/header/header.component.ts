@@ -14,9 +14,9 @@ export class HeaderComponent implements OnInit {
 
   constructor(private router:Router) { }
 
-  ngOnInit(): void {
-    // this.navlinks.classList.value = "nav-links-new";
-  }
+   ngOnInit(): void {
+  //   // this.navlinks.classList.value = "nav-links-new";
+   }
 
 
   tgmn(){

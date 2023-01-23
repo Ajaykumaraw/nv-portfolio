@@ -11,15 +11,46 @@
         <div class="emai-sec"><p>378Ajaykumar@gmail.com</p></div>
         <div class="email-line"><hr class="email-line"></div>
     </div>
-  <div class="header">
-      <app-header></app-header>
+  <div class="header-out">
+    <header class="header">
+      <div class="logo">
+          <h3>Aj</h3>
+      </div>
+      <div class="menu-bar" (click)="tgmn()">
+          <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="nav-links" id="nav_links" #links>
+          <div class="clmn" (click)="clmn()" #clicon>
+              <i class="fa-solid fa-xmark"></i>
+          </div>
+          <ul>
+              <li (click)="scrolldiv()"><a href="" routerLink="/about"><div class="spanw"><span>01.</span></div> <div>About</div></a></li>
+              <li (click)="scrollexp()"><a href="" routerLink="/workexperience"><div class="spanw"><span>02.</span></div> <div>Experience</div></a></li>
+              <li (click)="scrollproj()"><a href="" routerLink="/projects"><div class="spanw"><span>03.</span></div> <div>Work</div></a></li>
+              <li (click)="scrollgetInTouchSection()"><a href="" routerLink="/getIntouch"> <div class="spanw"><span>03.</span></div> <div>Contact</div></a></li>
+          </ul>
+          <div class="resume-btn">
+              <button (click)="tgmn()">Resume</button>  
+          </div>
+      </div>
+  </header>
   </div>
   <div class="router">
     <!-- <router-outlet></router-outlet> -->
-    <app-intro-section #intro></app-intro-section>
-    <app-about-me #about></app-about-me>
-    <app-work-experience #exp></app-work-experience>
-    <app-projects></app-projects>
-    <app-get-in-touch></app-get-in-touch>
+    <div class="intro-m" #intro>
+        <app-intro-section></app-intro-section>
+    </div>
+    <div class="about-m" #about>
+        <app-about-me></app-about-me>
+    </div>
+    <div class="exp-m" #exp>
+        <app-work-experience></app-work-experience>
+    </div>
+    <div class="work-m" #Work>
+        <app-projects></app-projects>
+    </div>
+    <div class="contact-m" #getInTouch>
+        <app-get-in-touch></app-get-in-touch>
+    </div>
   </div>
 </div>
