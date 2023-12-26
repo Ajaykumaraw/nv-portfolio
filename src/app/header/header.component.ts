@@ -35,4 +35,8 @@ export class HeaderComponent implements OnInit {
   scroll(element:any) {
     window.scrollTo(element.yPosition);
 }
+
+  resume(){
+      
+  }
 }

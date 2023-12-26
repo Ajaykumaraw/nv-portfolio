@@ -53,4 +53,7 @@ export class AppComponent {
   scrollgetInTouchSection(){
     this.getInTouchSection.nativeElement.scrollIntoView({behavior: 'smooth'});
   }
+  resume(){
+    
+  }
 }
